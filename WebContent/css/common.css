@@ -253,3 +253,43 @@ a:hover, a:focus {
 	right: 16px;
 }
 
+/*오늘 날짜 영역*/
+#date_wrap {
+	font-weight: bold;
+	color: #aaa;
+	position: absolute;
+	top: 145px;
+	right: 10px;
+	font-family: "nanum Gothic", Malgun Gothic, "맑은고딕", sans-serif;
+}
+
+#date_wrap span {
+	font-weight: 800;
+	font-size: 25px;
+	color: #888;
+}
+
+#container {
+	padding: 15px;
+}
+
+/*푸터 영역*/
+#inner_footer h3.footer_logo{
+	position:absolute;left:35px;top:48px;
+}
+#bottom_menu dd{
+	float:left;margin-right:15px;
+}
+#bottom_menu{
+	overflow:hidden;margin-bottom:25px;
+}
+#relSite_wrap{
+	position:absolute;left:815px;top:50px;
+}
+
+/*퀵 메뉴*/
+#quick_menu{
+	width:95px;text-align:center;
+	position: absolute;
+	top:100px;right:-96px;
+}

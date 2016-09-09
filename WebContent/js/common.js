@@ -120,4 +120,24 @@ $(function() {
 				$("#total_menu").slideUp("normal");
 				return false;
 			});
+
+	/* 날짜 표기 */
+	var t = new Date();
+	var y = t.getFullYear();
+	var m = t.getMonth();
+	var d = t.getDate();
+
+	$("#date_wrap .year").text(y);
+	$("#date_wrap .month").text(m + 1);
+	$("#date_wrap .date").text(d);
+
+	
+	 /*퀵 메뉴*/
+	  var defaultTop=parseInt($("#quick_menu").css("top"));
+	  $(window).on("scroll",function(){
+	     var scv=$(window).scrollTop();
+
+	     $("#quick_menu").stop().animate({top:scv+defaultTop+"px"},1000);
+	  });
+	  
 });
